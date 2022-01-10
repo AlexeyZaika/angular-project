@@ -1,0 +1,29 @@
+<ul class="menu-header__list">
+  <li class="menu-header__item">
+    <span (click)="showCatalog()"
+          class="menu-header__link">
+      {{ localize.store.navbar.catalog }}
+    </span>
+  </li>
+
+  <li class="menu-header__item">
+    <a [routerLink]="routerLink.about"
+       class="menu-header__link">
+      {{ localize.store.navbar.about }}
+    </a>
+  </li>
+
+  <li class="menu-header__item">
+    <a [routerLink]="routerLink.delivery"
+       class="menu-header__link">
+      {{ localize.store.navbar.delivery }}
+    </a>
+  </li>
+
+  <li class="menu-header__item">
+    <a [routerLink]="routerLink.contacts"
+       class="menu-header__link">
+      {{ localize.store.navbar.contacts }}
+    </a>
+  </li>
+</ul>

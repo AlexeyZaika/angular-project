@@ -1,0 +1,59 @@
+<form (ngSubmit)="onSubmit()"
+      (keydown.enter)="onSubmit(); searchInput.blur()"
+      [formGroup]="searchForm"
+      (outsideClick)="isVisible = false"
+      class="search-header__form">
+
+  <button type="submit"
+          class="search-header__icon">
+
+    <img src="assets/icons/search.svg"
+         alt="search">
+
+  </button>
+
+  <input #searchInput
+         (input)="onChange()"
+         (blur)="isVisible = false"
+         [placeholder]="localize.store.search.placeholder"
+         [ngClass]="{'active': isVisible}"
+         formControlName="search"
+         class="search-header__input"
+         name="search"
+         type="search"
+         autocomplete="off">
+
+  <div [ngClass]="{'active': isVisible}"
+       class="search-header__result">
+
+    <div *ngFor="let product of products | slice:0:5"
+         class="search-header__product">
+
+      <a [routerLink]="['catalog', product.id]"
+         (click)="isVisible = false"
+         class="search-header__product-image">
+
+        <img [src]="product.images[0].imageUrl" alt="">
+      </a>
+
+      <div class="search-header__product-body">
+        <a [routerLink]="['catalog', product.id]"
+           (click)="isVisible = false"
+           class="search-header__product-name">
+          {{ product.name }}
+        </a>
+
+        <div class="search-header__product-price">
+          {{ product.price }}
+          <sup class="search-header__product-currency">{{ localize.store.productCard.currency }}</sup>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="products.length === 0"
+         class="search-header__commit">
+      По Вашему запросу нет совпадений
+    </div>
+
+  </div>
+</form>

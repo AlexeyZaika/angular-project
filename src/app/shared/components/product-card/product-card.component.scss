@@ -1,0 +1,150 @@
+@import 'src/styles/variables/variables';
+
+.item-catalog {
+  &__wrapper {
+    padding: 0 15px 15px 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: $default-transition;
+
+    &:hover {
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+      .item-catalog__button,
+      .item-catalog__quantity {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  &__image-block {
+    position: relative;
+    margin-bottom: 30px;
+    padding-top: 100%;
+  }
+
+  &__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &__body {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $text-color-secondary;
+  }
+
+  &__description {
+    margin-bottom: 15px;
+  }
+
+  &__price {
+    flex: 1 1 auto;
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $text-color-secondary;
+  }
+
+  &__currency {
+    font-size: 11px;
+  }
+
+  &__variants {
+    display: flex;
+  }
+
+  &__variant {
+    flex: 0 0 38px;
+    padding: 2px;
+    width: 38px;
+    height: 38px;
+    margin-right: 10px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: $default-transition;
+
+    &:hover,
+    &.is-select {
+      border: 1px solid $border-color-secondary;
+    }
+  }
+
+  &__variant-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &__button {
+    position: absolute;
+    z-index: 2;
+    top: 15px;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: $background-color-secondary;
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+    transition: $default-transition;
+
+    &:hover {
+      background-color: $background-color-dark;
+    }
+  }
+
+  &__quantity {
+    position: absolute;
+    z-index: 2;
+    top: 15px;
+    right: 15px;
+    width: 90px;
+    opacity: 0;
+    visibility: hidden;
+    transition: $default-transition;
+  }
+}
+
+.item-catalog__wrapper.tape {
+  flex-direction: row;
+  align-items: center;
+
+  .item-catalog__image-block {
+    flex: 0 0 250px;
+    width: 250px;
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .item-catalog__image {
+    position: static;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .item-catalog__body {
+    flex: 1 1 auto;
+    margin-left: 30px;
+  }
+}

@@ -1,0 +1,14 @@
+<div class="catalog__sort-body">
+  <h2 class="catalog__sort-title">{{ localize.store.sorting.title }}</h2>
+  
+  <form (change)="onChange()" [formGroup]="sortForm" class="catalog__sort-form">
+    
+    <select formControlName="sort" class="catalog__sort-select">
+      <option [value]="SortOption.defaultOption">{{ localize.store.sorting.defaultOption }}</option>
+      <option [value]="SortOption.fromMaxToMinOption">{{ localize.store.sorting.fromMaxToMinOption }}</option>
+      <option [value]="SortOption.fromMinToMaxOption">{{ localize.store.sorting.fromMinToMaxOption }}</option>
+      <option [value]="SortOption.nameProductOption">{{ localize.store.sorting.nameProductOption }}</option>
+    </select>
+    
+  </form>
+</div>

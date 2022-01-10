@@ -1,0 +1,21 @@
+<div class="toggle-type__body">
+  <button (click)="toggleTypeProductTape()"
+          [ngClass]="{'active': isActiveTilesType}"
+          [disabled]="isActiveTilesType"
+          class="toggle-type__button">
+    
+    <img class="toggle-type__image"
+         src="assets/icons/tiles-product.svg"
+         alt="">
+  </button>
+  
+  <button (click)="toggleTypeProductTape()"
+          [ngClass]="{'active': !isActiveTilesType}"
+          [disabled]="!isActiveTilesType"
+          class="toggle-type__button">
+    
+    <img class="toggle-type__image"
+         src="assets/icons/list-product.svg"
+         alt="">
+  </button>
+</div>

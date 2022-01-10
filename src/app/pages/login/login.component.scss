@@ -1,0 +1,89 @@
+@import 'src/styles/variables/variables';
+
+.login {
+  padding: 100px 0;
+
+  .container {
+    display: flex;
+  }
+
+  &__content {
+    flex: 1 1 auto;
+    padding-right: 50px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    max-width: 500px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 125%;
+    color: $black-color;
+  }
+
+  &__subtitle {
+    max-width: 500px;
+    line-height: 150%;
+  }
+
+  &__form {
+    flex: 0 0 45%;
+  }
+
+  &__form-line {
+    position: relative;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__form-input {
+    padding: 10px 50px 10px 0;
+    font-size: 1.4rem;
+    border-bottom: 1px solid $border-color-secondary;
+    transition: $default-transition;
+
+    &:focus {
+      border-bottom: 1px solid $blue-color;
+
+      & ~ .login__form-label {
+        top: -10px;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &__form-label {
+    position: absolute;
+    top: 16px;
+    font-size: 1.4rem;
+    transition: $default-transition;
+
+    &.is-full {
+      top: -10px;
+      font-size: 1rem;
+    }
+  }
+
+  &__form-error {
+    position: absolute;
+    top: calc(100% + 15px);
+    color: $red-color;
+  }
+
+  &__form-button {
+    display: inline-block;
+    padding: 15px 25px;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: $white-color;
+    background-color: $black-color;
+    border-radius: 35px;
+    transition: $default-transition;
+
+    &:hover {
+      background-color: $background-color-dark;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+@import 'src/styles/variables/variables';
+
+.select-quantity {
+  &__body {
+    display: flex;
+    height: 30px;
+    border: 1px solid $border-color-secondary;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  &__button {
+    flex: 0 0 30px;
+    position: relative;
+    background-color: $white-color;
+    cursor: pointer;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 15px;
+      height: 2px;
+      background-color: $border-color-secondary;
+      transition: $default-transition;
+    }
+
+    &_plus {
+      &:before {
+        transform: translate(-50%, -50%) rotate(90deg);
+      }
+    }
+
+    &:hover {
+      &:before,
+      &:after {
+        background-color: $background-color-dark;
+      }
+    }
+
+    &.disable {
+      cursor: auto;
+
+      &:before,
+      &:after {
+        background-color: $border-color-primary;
+      }
+    }
+  }
+
+  &__input {
+    flex: 0 0 30px;
+    width: 30px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    background-color: $white-color;
+    border-left: 1px solid $border-color-secondary;
+    border-right: 1px solid $border-color-secondary;
+  }
+}

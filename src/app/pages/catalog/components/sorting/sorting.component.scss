@@ -1,0 +1,19 @@
+@import 'src/styles/variables/variables';
+
+.catalog {
+  &__sort-body {
+    display: flex;
+    align-items: center;
+  }
+
+  &__sort-title {
+    margin-right: 20px;
+    font-weight: 700;
+  }
+
+  &__sort-select {
+    padding: 5px 10px;
+    border: 1px solid $border-color-primary;
+    border-radius: 5px;
+  }
+}

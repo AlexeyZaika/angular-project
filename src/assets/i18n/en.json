@@ -1,0 +1,68 @@
+{
+  "navbar": {
+    "catalog": "Catalog",
+    "about": "About",
+    "delivery": "Delivery",
+    "contacts": "Contacts"
+  },
+  "search": {
+    "placeholder": "What are you looking for?"
+  },
+  "catalog": {
+    "title": "Catalog"
+  },
+  "about": {
+    "title": "About"
+  },
+  "cart": {
+    "title": "Cart"
+  },
+  "contacts": {
+    "title": "Contacts"
+  },
+  "delivery": {
+    "title": "Delivery"
+  },
+  "user": {
+    "title": "Profile",
+    "signOut": "Sign Out"
+  },
+  "footer": {
+    "copyright": "© Bed Style 1981-2021"
+  },
+  "notFound": {
+    "title": "Page not found"
+  },
+  "productCard": {
+    "currency": "hrv.",
+    "buttonToCard": "Buy"
+  },
+  "filter": {
+    "title": "Filters:",
+    "price": "Price",
+    "category": "Category",
+    "company": "Company",
+    "country": "Country of origin",
+    "material": "Materials",
+    "buttonSubmit": "Select",
+    "buttonReset": "Reset"
+  },
+  "sorting": {
+    "title": "Sort:",
+    "defaultOption": "default",
+    "fromMaxToMinOption": "descending prices",
+    "fromMinToMaxOption": "ascending prices",
+    "nameProductOption": "by name"
+  },
+  "login": {
+    "title": "Log in to your account",
+    "subtitle": "Log in or join today to take advantage of personalized offers!",
+    "labelMail": "Email",
+    "errorMail1": "Email field is required",
+    "errorMail2": "The entered email is not correct",
+    "labelPassword": "Password",
+    "errorPassword": "Password field is required",
+    "errorResponse": "Incorrect email or password entered",
+    "button": "Log in"
+  }
+}

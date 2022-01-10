@@ -1,0 +1,31 @@
+@import 'src/styles/variables/variables';
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  color: $text-color-primary;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1 1 auto;
+  padding: 30px 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1500px;
+}
+
+.section-title {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $text-color-secondary;
+}

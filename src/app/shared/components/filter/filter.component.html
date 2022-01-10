@@ -1,0 +1,150 @@
+<div class="filter__body">
+  
+  <h2 class="filter__title">{{ localize.store.filter.title }}</h2>
+  
+  <form [formGroup]="filterForm" (ngSubmit)="onSubmit()">
+    <div class="filter__block">
+      <h3 class="filter__title-block filter__title-block_price">{{ localize.store.filter.price }}</h3>
+      
+      <div class="filter__form-block filter__form-block_price">
+        <input #minPrice
+               [max]="maxPrice.value"
+               formControlName="minPrice"
+               class="filter__input"
+               name="minPrice"
+               min="0"
+               type="number"
+               required>
+        
+        <span class="filter__span">-</span>
+        
+        <input #maxPrice
+               [min]="minPrice.value"
+               formControlName="maxPrice"
+               class="filter__input"
+               name="maxPrice"
+               type="number"
+               required>
+      </div>
+    </div>
+    
+    <div class="filter__block">
+      <h3 [ngClass]="{'active': nameBlockFilter === FilterPoint.category}"
+          (click)="toggleVisibleBlockFilter(FilterPoint.category)"
+          class="filter__title-block">
+        {{ localize.store.filter.category }}
+      </h3>
+      
+      <div [formArrayName]="FilterPoint.category"
+           [ngClass]="{'active': nameBlockFilter === FilterPoint.category}"
+           class="filter__form-block filter__form-block_check">
+        
+        <div *ngFor="let category of categoriesFormArray.controls; let i = index"
+             class="filter__form-line">
+          
+          <input id="category{{ i }}"
+                 [formControlName]="i"
+                 [attr.disabled]="disabledCheckbox(checkboxList.categories, categories[i].name)"
+                 type="checkbox"
+                 class="filter__checkbox">
+          
+          <label for="category{{ i }}"
+                 class="filter__label">{{ categories[i].name }}
+          </label>
+        </div>
+      </div>
+    </div>
+    
+    <div class="filter__block">
+      <h3 [ngClass]="{'active': nameBlockFilter === FilterPoint.company}"
+          (click)="toggleVisibleBlockFilter(FilterPoint.company)"
+          class="filter__title-block">
+        {{ localize.store.filter.company }}
+      </h3>
+      
+      <div [formArrayName]="FilterPoint.company"
+           [ngClass]="{'active': nameBlockFilter === FilterPoint.company}"
+           class="filter__form-block filter__form-block_check">
+        
+        <div *ngFor="let company of companiesFormArray.controls; let i = index"
+             class="filter__form-line">
+          
+          <input id="company{{ i }}"
+                 [formControlName]="i"
+                 [attr.disabled]="disabledCheckbox(checkboxList.companies, companies[i].name)"
+                 type="checkbox"
+                 class="filter__checkbox">
+          
+          <label for="company{{ i }}"
+                 class="filter__label">{{ companies[i].name }}
+          </label>
+        </div>
+      </div>
+    </div>
+    
+    <div class="filter__block">
+      <h3 [ngClass]="{'active': nameBlockFilter === FilterPoint.country}"
+          (click)="toggleVisibleBlockFilter(FilterPoint.country)"
+          class="filter__title-block">
+        {{ localize.store.filter.country }}
+      </h3>
+      
+      <div [formArrayName]="FilterPoint.country"
+           [ngClass]="{'active': nameBlockFilter === FilterPoint.country}"
+           class="filter__form-block filter__form-block_check">
+        
+        <div *ngFor="let country of countriesFormArray().controls; let i = index"
+             class="filter__form-line">
+          
+          <input id="country{{ i }}"
+                 [formControlName]="i"
+                 [attr.disabled]="disabledCheckbox(checkboxList.countries, countries[i].name)"
+                 type="checkbox"
+                 class="filter__checkbox">
+          
+          <label for="country{{ i }}"
+                 class="filter__label">{{ countries[i].name }}
+          </label>
+        </div>
+      </div>
+    </div>
+    
+    <div class="filter__block">
+      <h3 [ngClass]="{'active': nameBlockFilter === FilterPoint.material}"
+          (click)="toggleVisibleBlockFilter(FilterPoint.material)"
+          class="filter__title-block">
+        {{ localize.store.filter.material }}
+      </h3>
+      
+      <div [formArrayName]="FilterPoint.material"
+           [ngClass]="{'active': nameBlockFilter === FilterPoint.material}"
+           class="filter__form-block filter__form-block_check">
+        
+        <div *ngFor="let material of materialsFormArray().controls; let i = index"
+             class="filter__form-line">
+          
+          <input id="material{{ i }}"
+                 [formControlName]="i"
+                 [attr.disabled]="disabledCheckbox(checkboxList.materials, materials[i].name)"
+                 type="checkbox"
+                 class="filter__checkbox">
+          
+          <label for="material{{ i }}"
+                 class="filter__label">{{ materials[i].name }}
+          </label>
+        </div>
+      </div>
+    </div>
+    
+    <div class="filter__button-block">
+      <button type="submit" class="filter__button">{{ localize.store.filter.buttonSubmit }}</button>
+      
+      <button (click)="clearFilter()"
+              type="button"
+              class="filter__button">
+        {{ localize.store.filter.buttonReset }}
+      </button>
+    </div>
+  </form>
+
+</div>

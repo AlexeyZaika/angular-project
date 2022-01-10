@@ -1,0 +1,17 @@
+<form [formGroup]="formSelectQuantity" class="select-quantity__body">
+  <div (click)="minusQuantity()"
+       [ngClass]="{'disable': selectedQuantity === 1}"
+       class="select-quantity__button select-quantity__button_minus">
+  </div>
+
+  <input (keydown)="numberOnly($event)"
+         (input)="onInput()"
+         [value]="selectedQuantity"
+         formControlName="quantity"
+         type="text"
+         class="select-quantity__input">
+
+  <div (click)="plusQuantity()"
+       class="select-quantity__button select-quantity__button_plus">
+  </div>
+</form>

@@ -1,0 +1,71 @@
+<section class="login">
+  <div class="container">
+    <div class="login__content">
+      <h1 class="login__title">{{ localize.store.login.title }}</h1>
+
+      <div class="login__subtitle">
+        {{ localize.store.login.subtitle }}
+      </div>
+    </div>
+
+    <form (ngSubmit)="onSubmit()"
+          [formGroup]="loginForm"
+          class="login__form">
+
+      <div class="login__form-line">
+        <input (change)="onChange()"
+               formControlName="email"
+               name="email"
+               id="email"
+               type="email"
+               class="login__form-input">
+
+        <label [ngClass]="{'is-full': isFullMail}"
+               for="email"
+               class="login__form-label">
+          {{ localize.store.login.labelMail }}
+        </label>
+
+        <span *ngIf="email?.errors?.required && isValid"
+              class="login__form-error">
+          {{ localize.store.login.errorMail1 }}
+        </span>
+
+        <span *ngIf="email?.errors?.email && isValid"
+              class="login__form-error">
+          {{ localize.store.login.errorMail2 }}
+        </span>
+      </div>
+
+      <div class="login__form-line">
+        <input (change)="onChange()"
+               formControlName="password"
+               name="password"
+               id="password"
+               type="password"
+               class="login__form-input">
+
+        <label [ngClass]="{'is-full': isFullPassword}"
+               for="password"
+               class="login__form-label">
+          {{ localize.store.login.labelPassword }}
+        </label>
+
+        <span *ngIf="password?.errors?.required && isValid"
+              class="login__form-error">
+          {{ localize.store.login.errorPassword }}
+        </span>
+
+        <span *ngIf="isLoggedIn === false"
+              class="login__form-error">
+          {{ localize.store.login.errorResponse }}
+        </span>
+      </div>
+
+      <button type="submit"
+              class="login__form-button">
+        {{ localize.store.login.button }}
+      </button>
+    </form>
+  </div>
+</section>

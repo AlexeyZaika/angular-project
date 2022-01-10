@@ -1,0 +1,106 @@
+@import 'src/styles/variables/variables';
+
+.header {
+  &__logo {
+    height: 60px;
+  }
+
+  &__logo-image {
+    height: 100%;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    position: relative;
+    background-color: $white-color;
+    border-bottom: solid 1px $border-color-primary;
+  }
+
+  &__menu {
+    margin-left: 40px;
+  }
+
+  &__search {
+    margin-left: 40px;
+    flex: 1 1 auto;
+  }
+
+  &__control {
+    display: flex;
+    margin-left: 40px;
+  }
+
+  &__icon {
+    position: relative;
+    flex: 0 0 44px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: $default-transition;
+
+    &:hover {
+      background: $background-color-primary;
+    }
+  }
+
+  &__icon-image {
+    height: 22px;
+    width: 22px;
+  }
+
+  &__icon-text {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $text-color-primary;
+    white-space: nowrap;
+  }
+
+  &__catalog {
+    position: absolute;
+    z-index: 20;
+    top: calc(100% + 1px);
+    left: 0;
+    width: 100%;
+    background-color: $white-color;
+    border-bottom: solid 1px $border-color-primary;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-150%);
+    transition: $default-transition;
+
+    &.is-shown {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+  }
+
+  &__languages {
+    display: flex;
+  }
+
+  &__button {
+    padding: 0 10px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: $text-color-primary;
+    background-color: transparent;
+    transition: $default-transition;
+
+    &:first-child {
+      border-right: 1px solid $border-color-primary;
+    }
+
+    &:hover {
+      color: $text-color-secondary;
+    }
+  }
+}

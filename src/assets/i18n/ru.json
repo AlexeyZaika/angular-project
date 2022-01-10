@@ -1,0 +1,68 @@
+{
+  "navbar": {
+    "catalog": "Каталог",
+    "about": "О нас",
+    "delivery": "Доставка",
+    "contacts": "Контакты"
+  },
+  "search": {
+    "placeholder": "Что ты ищешь?"
+  },
+  "catalog": {
+    "title": "Каталог"
+  },
+  "about": {
+    "title": "О нас"
+  },
+  "cart": {
+    "title": "Корзина"
+  },
+  "contacts": {
+    "title": "Контакты"
+  },
+  "delivery": {
+    "title": "Доставка"
+  },
+  "user": {
+    "title": "Профиль",
+    "signOut": "Выйти"
+  },
+  "footer": {
+    "copyright": "© Стильные Кровати 1981-2021"
+  },
+  "notFound": {
+    "title": "Страница не найдена"
+  },
+  "productCard": {
+    "currency": "грн.",
+    "buttonToCard": "Купить"
+  },
+  "filter": {
+    "title": "Фильтры:",
+    "price": "Цена",
+    "category": "Категория",
+    "company": "Компания",
+    "country": "Страна производства",
+    "material": "Материалы",
+    "buttonSubmit": "Выбрать",
+    "buttonReset": "Сбросить"
+  },
+  "sorting": {
+    "title": "Сортировать:",
+    "defaultOption": "по умолчанию",
+    "fromMaxToMinOption": "по убыванию цен",
+    "fromMinToMaxOption": "по возростанию цен",
+    "nameProductOption": "по названию"
+  },
+  "login": {
+    "title": "Войди в свой аккаунт",
+    "subtitle": "Войди или присоединяйся сегодня, чтобы воспользоваться персональными предложениями!",
+    "labelMail": "Электронная почта",
+    "errorMail1": "Поле электронная почта обязательно для заполнения",
+    "errorMail2": "Введенная электронная почта не корректная",
+    "labelPassword": "Пароль",
+    "errorPassword": "Поле пароль обязательно для заполнения",
+    "errorResponse": "Введена не правильная электронная почта или пароль",
+    "button": "Войти"
+  }
+}

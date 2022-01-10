@@ -1,0 +1,39 @@
+@import 'src/styles/variables/variables';
+
+.catalog-header {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px 0 0 0;
+  }
+
+  &__item {
+    flex: 0 0 20%;
+    margin-bottom: 25px;
+    padding: 0 25px;
+  }
+
+  &__link {
+    position: relative;
+    font-size: 1.15rem;
+    color: $text-color-primary;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 1px;
+      background-color: $background-color-dark;
+      transition: $default-transition;
+    }
+
+    &:hover {
+      &:after {
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+}

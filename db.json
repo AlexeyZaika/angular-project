@@ -1,0 +1,581 @@
+{
+  "users": [
+    {
+      "userId": "1",
+      "userName": "user",
+      "email": "test@test.com",
+      "userType": "user",
+      "password": "test"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "MALM МАЛЬМ",
+      "description": "Каркас кровати, высокий, 160x200 см",
+      "category": {
+        "id": "1",
+        "name": "Двухспальная кровать"
+      },
+      "price": 4699,
+      "company": {
+        "id": "1",
+        "name": "MALM"
+      },
+      "country": {
+        "id": "1",
+        "name": "Украина"
+      },
+      "material": [
+        {
+          "id": "1",
+          "name": "Дерево"
+        },
+        {
+          "id": "3",
+          "name": "С оббивкой"
+        }
+      ],
+      "images": [
+        {
+          "color": "белый",
+          "imageUrl": "https://www.ikea.com/ua/uk/images/products/malm-karkas-lizhka-visokiy-biliy-luroy__0749130_pe745499_s5.jpg?f=xxs"
+        },
+        {
+          "color": "бежевый",
+          "imageUrl": "https://www.ikea.com/ua/uk/images/products/malm-karkas-lizhka-visokiy-bileniy-duboviy-shpon-luroy__0637598_pe698416_s5.jpg?f=xxs"
+        },
+        {
+          "color": "Коричневый",
+          "imageUrl": "https://www.ikea.com/ua/uk/images/products/malm-karkas-lizhka-visokiy-korichneva-morilka-yaseneviy-shpon-lenset__0638589_pe699024_s5.jpg?f=xxs"
+        },
+        {
+          "color": "Черный",
+          "imageUrl": "https://www.ikea.com/ua/uk/images/products/malm-karkas-lizhka-visokiy-chorno-korichneviy-luroy__0638608_pe699032_s5.jpg?f=xxs"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "HEMNES ХЕМНЕС",
+      "description": "Каркас кровати, высокий, 160x200 см",
+      "category": {
+        "id": "1",
+        "name": "Двухспальная кровать"
+      },
+      "price": 5799,
+      "company": {
+        "id": "2",
+        "name": "HEMNES"
+      },
+      "country": {
+        "id": "2",
+        "name": "Польша"
+      },
+      "material": [
+        {
+          "id": "1",
+          "name": "Дерево"
+        }
+      ],
+      "images": [
+        {
+          "color": "белый",
+          "imageUrl": "https://www.ikea.com/ua/uk/images/products/hemnes-karkas-lizhka-bila-morilka__0637516_pe698353_s5.jpg?f=xxs"
+        },
+        {
+          "color": "черный",
+          "imageUrl": "https://www.ikea.com/ua/uk/images/products/hemnes-karkas-lizhka-chorno-korichneviy__0637551_pe704560_s5.jpg?f=xxs"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "IDANÄS ІДАНЕС",
+      "description": "Каркас кровати с отделением для хранения, высокий, 140x200 см",
+      "category": {
+        "id": "1",
+        "name": "Двухспальная кровать"
+      },
+      "price": 13099,
+      "company": {
+        "id": "3",
+        "name": "IDANÄS"
+      },
+      "country": {
+        "id": "2",
+        "name": "Польша"
+      },
+      "material": [
+        {
+          "id": "2",
+          "name": "МДФ"
+        },
+        {
+          "id": "3",
+          "name": "С оббивкой"
+        }
+      ],
+      "images": [
+        {
+          "color": "белый",
+          "imageUrl": "https://www.ikea.com/ua/uk/images/products/idanaes-idanes-karkas-lizhka-z-viddil-d-zberigannya-biliy-lenset__0916075_pe784951_s5.jpg?f=xxs"
+        },
+        {
+          "color": "черный",
+          "imageUrl": "https://www.ikea.com/ua/uk/images/products/idanaes-idanes-karkas-lizhka-z-viddil-d-zberigannya-temno-korichneviy-lenset__0916074_pe784950_s5.jpg?f=xxs"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "MALM МАЛЬМ",
+      "description": "Каркас кровати, высокий, 90x200 см",
+      "category": {
+        "id": "2",
+        "name": "Односпальная кровать"
+      },
+      "price": 2999,
+      "company": {
+        "id": "1",
+        "name": "MALM"
+      },
+      "country": {
+        "id": "1",
+        "name": "Украина"
+      },
+      "material": [
+        {
+          "id": "1",
+          "name": "Дерево"
+        },
+        {
+          "id": "3",
+          "name": "С оббивкой"
+        }
+      ],
+      "images": [
+        {
+          "color": "белый",
+          "imageUrl": "https://www.ikea.com/ua/uk/images/products/malm-karkas-lizhka-visokiy-chorno-korichneviy__0637621_pe704552_s5.jpg?f=xxs"
+        },
+        {
+          "color": "черный",
+          "imageUrl": "https://www.ikea.com/ua/uk/images/products/malm-karkas-lizhka-visokiy-biliy__0637620_pe704551_s5.jpg?f=xxs"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "HEMNES ХЕМНЕС",
+      "description": "Каркас кровати, 90x200 см",
+      "category": {
+        "id": "2",
+        "name": "Односпальная кровать"
+      },
+      "price": 4499,
+      "company": {
+        "id": "2",
+        "name": "HEMNES"
+      },
+      "country": {
+        "id": "3",
+        "name": "Чехия"
+      },
+      "material": [
+        {
+          "id": "1",
+          "name": "Дерево"
+        },
+        {
+          "id": "5",
+          "name": "Пластик"
+        }
+      ],
+      "images": [
+        {
+          "color": "белый",
+          "imageUrl": "https://www.ikea.com/ua/uk/images/products/hemnes-karkas-lizhka-bila-morilka__0637616_pe698429_s5.jpg?f=xxs"
+        },
+        {
+          "color": "черный",
+          "imageUrl": "https://www.ikea.com/ua/uk/images/products/hemnes-karkas-lizhka-chorno-korichneviy__0655475_pe709045_s5.jpg?f=xxs"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "BRIMNES БРІМНЕС",
+      "description": "Каркас кушетки с двумя ящиками, 80x200 см",
+      "category": {
+        "id": "2",
+        "name": "Односпальная кровать"
+      },
+      "price": 5499,
+      "company": {
+        "id": "5",
+        "name": "BRIMNES"
+      },
+      "country": {
+        "id": "3",
+        "name": "Чехия"
+      },
+      "material": [
+        {
+          "id": "2",
+          "name": "МДФ"
+        },
+        {
+          "id": "5",
+          "name": "Пластик"
+        }
+      ],
+      "images": [
+        {
+          "color": "белый",
+          "imageUrl": "https://www.ikea.com/ua/uk/images/products/brimnes-karkas-kushetki-iz-2-shuhlyadami-biliy__0654996_pe708887_s5.jpg?f=xxs"
+        },
+        {
+          "color": "черный",
+          "imageUrl": "https://www.ikea.com/ua/uk/images/products/brimnes-karkas-kushetki-iz-2-shuhlyadami-chorniy__0654990_pe708884_s5.jpg?f=xxs"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "SLÄKT СЛЕКТ",
+      "description": "Каркас кровати из рейковой основы, 90x200 см",
+      "category": {
+        "id": "3",
+        "name": "Детская кровать"
+      },
+      "price": 2499,
+      "company": {
+        "id": "6",
+        "name": "SLÄKT"
+      },
+      "country": {
+        "id": "2",
+        "name": "Польша"
+      },
+      "material": [
+        {
+          "id": "1",
+          "name": "Дерево"
+        }
+      ],
+      "images": [
+        {
+          "color": "белый",
+          "imageUrl": "https://www.ikea.com/ua/uk/images/products/slaekt-slekt-karkas-lizhka-z-reykovoyu-osnovoyu-biliy__0637774_pe698536_s5.jpg?f=xxs"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "SLÄKT СЛЕКТ",
+      "description": "Кровать-чердак, 90x200 см",
+      "category": {
+        "id": "3",
+        "name": "Детская кровать"
+      },
+      "price": 12009,
+      "company": {
+        "id": "6",
+        "name": "SLÄKT"
+      },
+      "country": {
+        "id": "2",
+        "name": "Польша"
+      },
+      "material": [
+        {
+          "id": "2",
+          "name": "МДФ"
+        },
+        {
+          "id": "3",
+          "name": "С оббивкой"
+        }
+      ],
+      "images": [
+        {
+          "color": "белый",
+          "imageUrl": "https://www.ikea.com/ua/uk/images/products/smastad-smostad-lizhko-gorishche-biliy-zeleniy-zi-stolom-z-3-shuhlyadami__0946955_pe798328_s5.jpg?f=xxs"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "BUSUNGE БУСУНГЕ",
+      "description": "Раздвижная кровать, 80x200 см",
+      "category": {
+        "id": "3",
+        "name": "Детская кровать"
+      },
+      "price": 4999,
+      "company": {
+        "id": "7",
+        "name": "BUSUNGE"
+      },
+      "country": {
+        "id": "1",
+        "name": "Украина"
+      },
+      "material": [
+        {
+          "id": "1",
+          "name": "Дерево"
+        },
+        {
+          "id": "5",
+          "name": "Пластик"
+        }
+      ],
+      "images": [
+        {
+          "color": "белый",
+          "imageUrl": "https://www.ikea.com/ua/uk/images/products/busunge-rozsuvne-lizhko-biliy__0637820_pe698559_s5.jpg?f=xxs"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "FRIHETEN ФРІХЕТЕН",
+      "description": "3-местный диван-кровать",
+      "category": {
+        "id": "4",
+        "name": "Диван-кровать"
+      },
+      "price": 14999,
+      "company": {
+        "id": "8",
+        "name": "FRIHETEN"
+      },
+      "country": {
+        "id": "4",
+        "name": "Словакия"
+      },
+      "material": [
+        {
+          "id": "1",
+          "name": "Дерево"
+        },
+        {
+          "id": "4",
+          "name": "Ткань"
+        }
+      ],
+      "images": [
+        {
+          "color": "синий",
+          "imageUrl": "https://www.ikea.com/ua/uk/images/products/friheten-3-misniy-divan-lizhko-skiftebu-siniy__0690280_pe723200_s5.jpg?f=xxs"
+        },
+        {
+          "color": "бежевый",
+          "imageUrl": "https://www.ikea.com/ua/uk/images/products/friheten-3-misniy-divan-lizhko-hyullie-bezheviy__0690274_pe723194_s5.jpg?f=xxs"
+        },
+        {
+          "color": "серый",
+          "imageUrl": "https://www.ikea.com/ua/uk/images/products/friheten-3-misniy-divan-lizhko-skiftebu-temno-siriy__0525504_pe644868_s5.jpg?f=xxs"
+        },
+        {
+          "color": "темно-серый",
+          "imageUrl": "https://www.ikea.com/ua/uk/images/products/friheten-3-misniy-divan-lizhko-hyullie-temno-siriy__0690268_pe723188_s5.jpg?f=xxs"
+        },
+        {
+          "color": "черный",
+          "imageUrl": "https://www.ikea.com/ua/uk/images/products/friheten-3-misniy-divan-lizhko__0525511_pe644872_s5.jpg?f=xxs"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "name": "GRÖNLID ГРЕНЛІД",
+      "description": "2-местный диван-кровать",
+      "category": {
+        "id": "4",
+        "name": "Диван-кровать"
+      },
+      "price": 24598,
+      "company": {
+        "id": "9",
+        "name": "GRÖNLID"
+      },
+      "country": {
+        "id": "3",
+        "name": "Чехия"
+      },
+      "material": [
+        {
+          "id": "2",
+          "name": "МДФ"
+        },
+        {
+          "id": "4",
+          "name": "Ткань"
+        }
+      ],
+      "images": [
+        {
+          "color": "зеленый",
+          "imageUrl": "https://www.ikea.com/ua/uk/images/products/groenlid-grenlid-2-misniy-divan-lizhko-lyungen-svitlo-zeleniy__0621859_pe690116_s5.jpg?f=xxs"
+        },
+        {
+          "color": "белый",
+          "imageUrl": "https://www.ikea.com/ua/uk/images/products/groenlid-grenlid-2-misniy-divan-lizhko-inseros-biliy__0621855_pe690113_s5.jpg?f=xxs"
+        },
+        {
+          "color": "серый",
+          "imageUrl": "https://www.ikea.com/ua/uk/images/products/groenlid-grenlid-2-misniy-divan-lizhko-lyungen-klasichniy-siriy__0621835_pe690102_s5.jpg?f=xxs"
+        },
+        {
+          "color": "красный",
+          "imageUrl": "https://www.ikea.com/ua/uk/images/products/groenlid-grenlid-2-misniy-divan-lizhko-lyungen-svitlo-chervoniy__0890934_pe782200_s5.jpg?f=xxs"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "name": "HOLMSUND ХОЛЬМСУНД",
+      "description": "3-местный диван-кровать",
+      "category": {
+        "id": "4",
+        "name": "Диван-кровать"
+      },
+      "price": 14999,
+      "company": {
+        "id": "10",
+        "name": "HOLMSUND"
+      },
+      "country": {
+        "id": "4",
+        "name": "Словакия"
+      },
+      "material": [
+        {
+          "id": "1",
+          "name": "Дерево"
+        },
+        {
+          "id": "4",
+          "name": "Ткань"
+        }
+      ],
+      "images": [
+        {
+          "color": "серый",
+          "imageUrl": "https://www.ikea.com/ua/uk/images/products/holmsund-3-misniy-divan-lizhko-nordvalla-klasichniy-siriy__0405557_pe577547_s5.jpg?f=xxs"
+        },
+        {
+          "color": "бежевый",
+          "imageUrl": "https://www.ikea.com/ua/uk/images/products/holmsund-3-misniy-divan-lizhko-nordvalla-bezheviy__0405558_pe577546_s5.jpg?f=xxs"
+        },
+        {
+          "color": "синий",
+          "imageUrl": "https://www.ikea.com/ua/uk/images/products/holmsund-3-misniy-divan-lizhko-orrsta-svitlo-siniy__0531611_pe647438_s5.jpg?f=xxs"
+        },
+        {
+          "color": "белый",
+          "imageUrl": "https://www.ikea.com/ua/uk/images/products/holmsund-3-misniy-divan-lizhko-orrsta-svitliy-bilo-siriy__0531936_pe647656_s5.jpg?f=xxs"
+        }
+      ]
+    }
+  ],
+  "category": [
+    {
+      "id": "1",
+      "name": "Двухспальная кровать"
+    },
+    {
+      "id": "2",
+      "name": "Односпальная кровать"
+    },
+    {
+      "id": "3",
+      "name": "Детская кровать"
+    },
+    {
+      "id": "4",
+      "name": "Диван-кровать"
+    }
+  ],
+  "company": [
+    {
+      "id": "1",
+      "name": "MALM"
+    },
+    {
+      "id": "2",
+      "name": "HEMNES"
+    },
+    {
+      "id": "3",
+      "name": "IDANÄS"
+    },
+    {
+      "id": "5",
+      "name": "BRIMNES"
+    },
+    {
+      "id": "6",
+      "name": "SLÄKT"
+    },
+    {
+      "id": "7",
+      "name": "BUSUNGE"
+    },
+    {
+      "id": "8",
+      "name": "FRIHETEN"
+    },
+    {
+      "id": "9",
+      "name": "GRÖNLID"
+    },
+    {
+      "id": "10",
+      "name": "HOLMSUND"
+    }
+  ],
+  "country": [
+    {
+      "id": "1",
+      "name": "Украина"
+    },
+    {
+      "id": "2",
+      "name": "Польша"
+    },
+    {
+      "id": "3",
+      "name": "Чехия"
+    },
+    {
+      "id": "4",
+      "name": "Словакия"
+    }
+  ],
+  "material": [
+    {
+      "id": "1",
+      "name": "Дерево"
+    },
+    {
+      "id": "2",
+      "name": "МДФ"
+    },
+    {
+      "id": "3",
+      "name": "С оббивкой"
+    },
+    {
+      "id": "4",
+      "name": "Ткань"
+    },
+    {
+      "id": "5",
+      "name": "Пластик"
+    }
+  ]
+}

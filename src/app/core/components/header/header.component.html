@@ -1,0 +1,62 @@
+<header class="header">
+  <div class="container">
+    <div class="header__content">
+      <a [routerLink]="Router.home"
+         class="header__logo">
+        <img class="header__logo-image"
+             src="assets/images/logo.svg"
+             alt="Мебели Дома Нет">
+      </a>
+
+      <mc-navbar (isVisible)="isVisible($event)"
+                 class="header__menu menu-header">
+      </mc-navbar>
+
+      <mc-search class="header__search search-header"></mc-search>
+
+      <div class="header__control">
+        <div class="header__languages">
+          <button (click)="localize.changeLanguage(Localize.ru)"
+                  class="header__button">
+            RU
+          </button>
+
+          <button (click)="localize.changeLanguage(Localize.en)"
+                  class="header__button">
+            EN
+          </button>
+        </div>
+
+        <a *ngIf="!(isLoggedIn$ | async)"
+           [routerLink]="Router.login"
+           class="header__icon">
+          <img class="header__icon-image"
+               src="assets/icons/user.svg"
+               alt="User">
+        </a>
+
+        <a *ngIf="(isLoggedIn$ | async)"
+           [routerLink]="Router.user"
+           class="header__icon">
+          <img class="header__icon-image"
+               src="assets/icons/user.svg"
+               alt="User">
+          <span *ngIf="(user$ | async) as user" class="header__icon-text">
+            {{ user.userName }}
+          </span>
+        </a>
+
+        <a [routerLink]="Router.cart"
+           class="header__icon">
+          <img class="header__icon-image"
+               src="assets/icons/cart.svg"
+               alt="Cart">
+        </a>
+      </div>
+
+      <mc-catalog [ngClass]="{'is-shown': isVisibleCatalog}"
+                  class="header__catalog catalog-header">
+      </mc-catalog>
+    </div>
+  </div>
+</header>

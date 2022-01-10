@@ -1,0 +1,49 @@
+<section *ngIf="(product$ | async) as product" class="product">
+  <div class="container">
+    <div class="product__body">
+      <div class="product__images">
+
+        <div class="product__image-block">
+          <img [src]="product.images[numberImage].imageUrl"
+               class="product__image"
+               alt="">
+        </div>
+
+        <ul *ngIf="product.images.length > 1" class="product__variants">
+          <li *ngFor="let image of product.images; let imageIndex = index"
+              [ngClass]="{ 'is-select': imageIndex === numberImage }"
+              (click)="onChangeImage(imageIndex)"
+              class="product__variant">
+
+            <img [src]="image.imageUrl"
+                 class="product__variant-image"
+                 alt="">
+
+          </li>
+        </ul>
+      </div>
+
+      <div class="product__content">
+        <h1 class="product__title">{{ product.name }}</h1>
+
+        <div class="product__description">{{ product.description }}</div>
+
+        <div class="product__price">
+          {{ product.price }}
+          <sup class="product__currency">{{ localize.store.productCard.currency }}</sup>
+        </div>
+
+        <div class="product__control">
+          <mc-quantity class="product__quantity select-quantity"></mc-quantity>
+
+          <button (click)="addToCart()"
+                  class="product__button"
+                  type="button">
+            {{ localize.store.productCard.buttonToCard }}
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>

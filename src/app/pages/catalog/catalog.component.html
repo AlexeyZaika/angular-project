@@ -1,0 +1,30 @@
+<section class="catalog">
+  <div class="container">
+    <div class="catalog__header">
+      <h1 class="section-title">{{ localize.store.catalog.title }}</h1>
+      
+      <mc-sorting class="catalog__sort"></mc-sorting>
+      
+      <mc-toggle-type-product-tape
+          (isTypeProductTapeTiles)="toggleTypeProductTape($event)"
+          class="catalog__toggle-type toggle-type">
+      </mc-toggle-type-product-tape>
+    </div>
+    
+    <div class="catalog__body">
+      <mc-filter class="catalog__filter filter"></mc-filter>
+  
+      <div [ngClass]="{'tape': !isActiveTilesType}"
+           (scrollDocument)="showMoreProduct()"
+           class="catalog__content">
+    
+        <mc-product-card *ngFor="let product of products | slice: 0: paginationIterator"
+                         [product]="product"
+                         [isTypeProductTapeTiles]="isActiveTilesType"
+                         [ngClass]="{'tape': !isActiveTilesType}"
+                         class="catalog__item item-catalog">
+        </mc-product-card>
+      </div>
+    </div>
+  </div>
+</section>

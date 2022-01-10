@@ -1,0 +1,39 @@
+<div [ngClass]="{'tape': !isActiveTilesType}" class="item-catalog__wrapper">
+  <a [routerLink]="['catalog', product.id]"
+     class="item-catalog__image-block">
+    
+    <img [src]="product.images[numberImage].imageUrl"
+         class="item-catalog__image"
+         alt="">
+  </a>
+  
+  <div class="item-catalog__body">
+    <h2 class="item-catalog__title">{{ product.name }}</h2>
+    
+    <div class="item-catalog__description">{{ product.description }}</div>
+    
+    <div class="item-catalog__price">
+      {{ product.price }}
+      <sup class="item-catalog__currency">{{ localize.store.productCard.currency }}</sup>
+    </div>
+    
+    <ul *ngIf="product.images.length > 1" class="item-catalog__variants">
+      <li *ngFor="let image of product.images; let imageIndex = index"
+          [ngClass]="{ 'is-select': imageIndex === numberImage }"
+          (click)="onChangeImage(imageIndex)"
+          class="item-catalog__variant">
+        
+        <img [src]="image.imageUrl"
+             class="item-catalog__variant-image"
+             alt="">
+      
+      </li>
+    </ul>
+    
+    <button (click)="addToCart()" class="item-catalog__button">
+      <img src="./assets/icons/add-cart.svg" alt="">
+    </button>
+
+    <mc-quantity class="item-catalog__quantity quantity"></mc-quantity>
+  </div>
+</div>

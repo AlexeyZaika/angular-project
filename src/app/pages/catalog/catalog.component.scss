@@ -1,0 +1,52 @@
+@import 'src/styles/variables/variables';
+
+.catalog {
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .section-title {
+    flex: 0 0 250px;
+    width: 250px;
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+
+  &__sort {
+    flex: 1 1 auto;
+  }
+
+  &__body {
+    display: flex;
+  }
+
+  &__filter {
+    flex: 0 0 250px;
+    width: 250px;
+    margin-right: 30px;
+  }
+
+  &__content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+
+    &.tape {
+      display: block;
+    }
+  }
+
+  &__item {
+    flex: 0 0 33.333%;
+    margin-bottom: 30px;
+    padding: 0 25px;
+    display: flex;
+
+    &.tape {
+      display: block;
+    }
+  }
+}
